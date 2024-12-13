@@ -18,7 +18,7 @@ void controller(void* data) {
         // If you are too close to the car in front of you you need to break and not accelerate
         if(local_data->position_actual < local_data->position_setp){
             // Break command cannot be above 100%
-            if(local_data + 1 <= 100) {
+            if(local_data->break_command + 1 <= 100) {
                 (local_data->break_command)++;
             } else {
                 local_data->break_command = 100;
