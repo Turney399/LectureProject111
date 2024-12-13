@@ -10,7 +10,7 @@ typedef struct {
     int speed_setp;
     int speed_actual;
     int position_setp;
-    int position_actval;
+    int position_actual;
     float accel_man;
     float break_man;
     float accel_command;
